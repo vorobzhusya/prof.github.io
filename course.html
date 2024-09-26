@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета для профориентирования</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Анкета для профориентирования</h1>
+        <form id="surveyForm">
+            <section>
+                <h2>1. Личная информация</h2>
+                <label>ФИО: <input type="text" name="fullName" required></label>
+                <label>Возраст: <input type="number" name="age" required></label>
+                <label>Контактный телефон: <input type="tel" name="phone" required></label>
+                <label>Электронная почта: <input type="email" name="email" required></label>
+            </section>
+
+            <section>
+                <h2>2. Интересы и предпочтения</h2>
+                <p>Выберите направление, которое вас интересует (можно выбрать несколько):</p>
+                <label><input type="checkbox" name="interests" value="Точные науки"> Точные науки</label>
+                <label><input type="checkbox" name="interests" value="Гуманитарные науки"> Гуманитарные науки</label>
+                <label><input type="checkbox" name="interests" value="Искусство"> Искусство</label>
+                <label><input type="checkbox" name="interests" value="Техническое творчество"> Техническое творчество</label>
+            </section>
+
+            <section>
+                <h2>4. Подробности по направлениям</h2>
+                <div id="exactScienceInterests" class="details">
+                    <h3>Если выбрано "Точные науки", укажите ваши интересы:</h3>
+                    <label><input type="checkbox" value="Математика"> Математика</label>
+                    <label><input type="checkbox" value="Астрономия"> Астрономия</label>
+                    <label><input type="checkbox" value="Биология"> Биология</label>
+                    <label><input type="checkbox" value="Экология"> Экология</label>
+                    <label><input type="checkbox" value="Физика"> Физика</label>
+                    <label><input type="checkbox" value="География"> География</label>
+                    <label><input type="checkbox" value="Микробиология"> Микробиология</label>
+                    <label><input type="checkbox" value="Химия"> Химия</label>
+                    <label><input type="checkbox" value="Геология"> Геология</label>
+                    <label><input type="checkbox" value="Другое"> Другое: <input type="text"></label>
+                </div>
+
+                <div id="humanitiesInterests" class="details">
+                    <h3>Если выбрано "Гуманитарные науки", укажите ваши интересы:</h3>
+                    <label><input type="checkbox" value="История"> История</label>
+                    <label><input type="checkbox" value="Русский язык"> Русский язык</label>
+                    <label><input type="checkbox" value="Литература"> Литература</label>
+                    <label><input type="checkbox" value="Обществознание"> Обществознание</label>
+                    <label><input type="checkbox" value="Право"> Право</label>
+                    <label><input type="checkbox" value="Другое"> Другое: <input type="text"></label>
+                </div>
+
+                <div id="artInterests" class="details">
+                    <h3>Если выбрано "Искусство", укажите ваши интересы:</h3>
+                    <label><input type="checkbox" value="Живопись"> Живопись</label>
+                    <label><input type="checkbox" value="МХК"> МХК</label>
+                    <label><input type="checkbox" value="Гончарное дело"> Гончарное дело</label>
+                    <label><input type="checkbox" value="Скульптура"> Скульптура</label>
+                    <label><input type="checkbox" value="Тележурналистика"> Тележурналистика</label>
+                    <label><input type="checkbox" value="Литературное творчество"> Литературное творчество</label>
+                    <label><input type="checkbox" value="Компьютерная графика"> Компьютерная графика</label>
+                    <label><input type="checkbox" value="Дизайн"> Дизайн</label>
+                    <label><input type="checkbox" value="Другое"> Другое: <input type="text"></label>
+                </div>
+
+                <div id="technicalInterests" class="details">
+                    <h3>Если выбрано "Техническое творчество", укажите ваши интересы:</h3>
+                    <label><input type="checkbox" value="Программирование"> Программирование</label>
+                    <label><input type="checkbox" value="Робототехника"> Робототехника</label>
+                    <label><input type="checkbox" value="Схемотехника"> Схемотехника</label>
+                    <label><input type="checkbox" value="Моделирование"> Моделирование</label>
+                    <label><input type="checkbox" value="Композитные материалы"> Композитные материалы</label>
+                    <label><input type="checkbox" value="Изобретательство"> Изобретательство</label>
+                    <label><input type="checkbox" value="ИИ"> ИИ</label>
+                    <label><input type="checkbox" value="Черчение и графика"> Черчение и графика</label>
+                    <label><input type="checkbox" value="Другое"> Другое: <input type="text"></label>
+                </div>
+            </section>
+            <section>
+                <h2>5. Цели обучения</h2>
+                <p>Каковы ваши цели обучения? (можно выбрать несколько):</p>
+                <label><input type="checkbox" value="Углубление знаний"> Углубление знаний в выбранной области</label>
+                <label><input type="checkbox" value="Подготовка к экзаменам"> Подготовка к экзаменам/тестам</label>
+                <label><input type="checkbox" value="Получение новой профессии"> Получение новой профессии</label>
+                <label><input type="checkbox" value="Саморазвитие"> Саморазвитие и хобби</label>
+                <label><input type="checkbox" value="Другое"> Другое: <input type="text"></label>
+            </section>
+
+            <section>
+                <h2>6. Дополнительная информация</h2>
+                <label>Опишите, какие навыки вы хотели бы развить или какие вопросы вас интересуют:
+                    <textarea name="skills" rows="4"></textarea>
+                </label>
+            </section>
+
+            <section>
+                <h2>8. Удобное время для занятий</h2>
+                <label>Укажите предпочтительное время для занятий: <input type="text" name="preferredTime"></label>
+            </section>
+
+            <section>
+                <h2>9. Другие комментарии или пожелания:</h2>
+                <textarea name="comments" rows="4"></textarea>
+            </section>
+
+            <button type="submit">Отправить анкету</button>
+        </form>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
